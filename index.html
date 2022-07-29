@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/1b2bdedf91.js" crossorigin="anonymous"></script>
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+    <header>
+        <div class="mobile-light-box hide"></div>
+        <img class="menu_btn" src="./images/icon-menu.svg" alt="menu">
+        <div class="mobile_nav">
+            <i class="fa-solid fa-xmark menu-close_btn"></i>
+            <ul class="nav_card"> 
+                <li><a href="">Collections</a></li>
+                <li><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <img class="logo_img" src="./images/logo.svg" alt="logo">
+        <nav class="desktop_nav">
+            <a href="">Collections</a>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+        <div class="cart_div">
+            <i class="fa-solid fa-cart-shopping cart_icon">
+                <small class="hide">0</small>
+            </i>
+            <img src="./images/image-avatar.png" alt="customer avatar">
+        </div>
+    </header>
+    <main>
+        <div class="product_container">
+            <img class="product current_img" src="./images/image-product-1.jpg" alt="">
+            <img class="product hide" src="./images/image-product-2.jpg" alt="">
+            <img class="product hide" src="./images/image-product-3.jpg" alt="">
+            <img class="product hide" src="./images/image-product-4.jpg" alt="">
+            <button class="prev_btn"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+            <div class="thumbnails">
+                <div class="thumbnail current_thumbnail">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="">
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="">
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
+            <div class="cart_card hide">
+                <div class="title_container">
+                    <h2>Card</h2>
+                </div>
+                <div class="cart_card-content">
+                    <div class="cart_content hide">
+                        <img class="product_thumbnail" src="./images/image-product-1-thumbnail.jpg" alt="">
+                        <div class="order-summary">
+                            <p>Autumn Limited Edition...</p>
+                            <p class="sum-total"></p>
+                        </div>
+                        <img class="delete_icon" src="./images/icon-delete.svg" alt="">
+                    </div>           
+                    <button class="checkout_btn hide">Checkout</button>
+                    <p class="empty-text">Your cart is empty</p>
+                </div>
+            </div>
+        </div>
+        <article class="product_component">
+            <h1>Sneaker Company</h1>
+            <h2>Fall Limited Edition Sneakers</h2>
+            <p>
+                These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+            <div class="price_container">
+                <strong>$125.00</strong>
+                <p>50%</p>
+                <s>$250.00</s>
+            </div>
+            <div class="order-placement_container">
+                <div class="quantity_container">
+                    <button class="minus"><img src="./images/icon-minus.svg" alt="minus"></button>
+                    <p>0</p>
+                    <button class="plus"><img src="./images/icon-plus.svg" alt="plus"></button>
+                </div>
+                <button class="add-to-cart_btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to cart
+                </button>
+            </div>
+        </article>
+        <div class="light-box hide">
+            <div class="slideshow_container">
+                <i class="fa-solid fa-xmark light-box-close_btn"></i>
+                <img class="product_slide current_slide" src="./images/image-product-1.jpg" alt="">
+                <img class="product_slide hide" src="./images/image-product-2.jpg" alt="">
+                <img class="product_slide hide" src="./images/image-product-3.jpg" alt="">
+                <img class="product_slide hide" src="./images/image-product-4.jpg" alt="">
+                <button class="prev_slide"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="next_slide"><i class="fa-solid fa-angle-right"></i></button>
+                <div class="slide-thumbnails">
+                    <div class="slide-thumbnail current_slide-thumbnail">
+                        <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="slide-thumbnail">
+                        <img src="./images/image-product-2-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="slide-thumbnail">
+                        <img src="./images/image-product-3-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="slide-thumbnail">
+                        <img src="./images/image-product-4-thumbnail.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/PeterAdedokun1">Adedokun Peter</a>.
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
